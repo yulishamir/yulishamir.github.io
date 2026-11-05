@@ -9,12 +9,12 @@
       document.querySelector('meta[name="color-scheme"]').content = localStorage.getItem("color-scheme") ?? "light";
     } catch (e) {}
   </script>
-  <title>Yuli Shamir — Project &amp; Product Management Portfolio (Mabat &amp; Field Kit)</title>
-  <meta name="description" content="Project Manager Portfolio of Yuli Shamir — Interactive mobile simulator of the Mabat equipment-readiness &amp; fault-tracking platform, product requirements architecture, and Field Maintenance Backpack engineering case study." />
+  <title>יולי שמיר — תיק עבודות בניהול פרויקטים ומוצר (מערכת מב"ט ותיק אחזקה מבצעי)</title>
+  <meta name="description" content="תיק עבודות בניהול פרויקטים ומוצר של יולי שמיר — הדגמה חיה של מערכת מב״ט לבקרת כשירות ומעקב תקלות, ותיק אחזקה מבצעי (מענה שלם אחזקתי נייד)." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://sunshine1247474.github.io/yuli-shamir-portfolio/" />
-  <meta property="og:title" content="Yuli Shamir — Project &amp; Product Management Portfolio (Mabat &amp; Field Kit)" />
-  <meta property="og:description" content="Interactive mobile simulator of the Mabat equipment-readiness &amp; fault-tracking platform, product requirements architecture, and Field Maintenance Backpack engineering case study." />
+  <meta property="og:title" content="יולי שמיר — תיק עבודות בניהול פרויקטים ומוצר (מערכת מב״ט ותיק אחזקה מבצעי)" />
+  <meta property="og:description" content="תיק עבודות בניהול פרויקטים ומוצר של יולי שמיר — מערכת מב״ט לבקרת כשירות ותיק אחזקה מבצעי." />
   <meta property="og:image" content="https://sunshine1247474.github.io/yuli-shamir-portfolio/og-preview.png" />
   <meta property="og:image:width" content="1440" />
   <meta property="og:image:height" content="900" />
@@ -106,12 +106,21 @@
     html {
       scroll-behavior: smooth;
     }
+    html[dir="rtl"] {
+      direction: rtl;
+      text-align: right;
+    }
+    html[dir="ltr"] {
+      direction: ltr;
+      text-align: left;
+    }
 
     body {
       font-family: var(--font-main);
       background-color: var(--bg);
       color: var(--ink);
       line-height: 1.65;
+      text-align: start;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -254,13 +263,13 @@
       }
     }
     .hero-kicker {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
+      font-size: 0.84rem;
+      font-weight: 700;
+      letter-spacing: 0;
       color: var(--muted);
       margin-block-end: 0.9rem;
       display: block;
+      text-align: start;
     }
     .hero-headline {
       font-size: clamp(2.1rem, 3.8vw, 3.35rem);
@@ -451,13 +460,14 @@
       }
     }
     .case-index-tag {
-      font-family: var(--font-mono);
-      font-size: 0.76rem;
-      font-weight: 600;
+      font-family: var(--font-main);
+      font-size: 0.78rem;
+      font-weight: 700;
       color: var(--muted);
-      letter-spacing: 0.06em;
+      letter-spacing: 0;
       display: block;
       margin-block-end: 0.45rem;
+      text-align: start;
     }
     .case-sidebar h2 {
       font-size: 1.65rem;
@@ -465,25 +475,29 @@
       letter-spacing: -0.02em;
       line-height: 1.22;
       margin-block-end: 1.35rem;
+      text-align: start;
     }
     .meta-dl {
       border-block-start: 1px solid var(--line);
     }
     .meta-row {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 7.25rem 1fr;
+      align-items: baseline;
       padding-block: 0.7rem;
       border-block-end: 1px solid var(--line);
       font-size: 0.84rem;
-      gap: 1rem;
+      gap: 0.85rem;
+      text-align: start;
     }
     .meta-row dt {
       color: var(--muted);
-      font-weight: 400;
+      font-weight: 500;
+      text-align: start;
     }
     .meta-row dd {
       font-weight: 600;
-      text-align: end;
+      text-align: start;
     }
 
     .narrative-3col {
@@ -501,17 +515,18 @@
       }
     }
     .narrative-col h3 {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+      font-size: 0.82rem;
+      letter-spacing: 0;
       color: var(--muted);
       margin-block-end: 0.55rem;
-      font-weight: 600;
+      font-weight: 700;
+      text-align: start;
     }
     .narrative-col p {
       font-size: 0.94rem;
       color: var(--ink);
       line-height: 1.66;
+      text-align: start;
     }
 
     .view-bar {
@@ -872,11 +887,11 @@
       vertical-align: top;
     }
     thead th {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+      font-size: 0.78rem;
+      letter-spacing: 0;
       color: var(--muted);
-      font-weight: 600;
+      font-weight: 700;
+      text-align: start;
     }
     @media (max-width: 768px) {
       .table-wrapper {
@@ -985,21 +1000,21 @@
 
   <div class="opsec-bar">
     <span data-i18n="opsecText">הבהרת ביטחון מידע: כלל המזהים והנתונים באתר זה הינם פיקטיביים להדגמת יכולות ניהול פרויקטים ומוצר בלבד, ללא כמויות אמצעים וללא מידע מסווג.</span>
-    <span>Yuli Shamir | Project Manager Portfolio</span>
+    <span data-i18n="opsecRight">יולי שמיר | תיק עבודות בניהול פרויקטים ומוצר</span>
   </div>
 
   <header class="site-header">
     <div class="header-inner">
       <a href="#" class="brand-link">
         <strong data-i18n="brandName">יולי שמיר</strong>
-        <span data-i18n="brandRole">Project Manager | תפעול טכני, הובלת צוותים ומוצרים</span>
+        <span data-i18n="brandRole">מנהלת פרויקטים | תפעול טכני, הובלת צוותים ומוצרים</span>
       </a>
       <nav class="nav-list">
         <a href="#work-mabat" class="nav-item" data-i18n="nav1">01 מערכת מב"ט</a>
         <a href="#work-backpack" class="nav-item" data-i18n="nav2">02 תיק אחזקה מבצעי</a>
         <a href="#work-validation" class="nav-item" data-i18n="nav3">03 מתודולוגיית ניסויים</a>
         <a href="#work-career" class="nav-item" data-i18n="nav4">04 ניסיון והשכלה</a>
-        <a href="https://www.linkedin.com/in/yuli-shamir-a19510447" target="_blank" rel="noopener" class="nav-item">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/yuli-shamir-a19510447" target="_blank" rel="noopener" class="nav-item" data-i18n="navLinkedin">פרופיל לינקדאין</a>
         <button type="button" class="nav-item bordered" onclick="switchColorMode()" data-i18n="themeLabel">תצוגה כהה / בהירה</button>
         <button type="button" class="nav-item bordered" id="langSwitchBtn" onclick="switchLang()">English</button>
       </nav>
@@ -1014,7 +1029,7 @@
     <section class="editorial-hero">
       <div class="hero-top-grid">
         <div>
-          <span class="hero-kicker" data-i18n="heroKicker">Project Manager | Technical Operations & Team Leadership | Digital & Physical Product Projects</span>
+          <span class="hero-kicker" data-i18n="heroKicker">מנהלת פרויקטים | תפעול טכני והובלת צוותים | ייזום והובלת מוצרים דיגיטליים ופיזיים</span>
           <h1 class="hero-headline" data-i18n="heroHeadline">
             מצרכים אמיתיים בשטח למוצרים ופרויקטים עובדים.
           </h1>
@@ -1023,29 +1038,29 @@
           </p>
 
           <div class="skills-inline">
-            <span class="skill-tag">Project Planning</span>
-            <span class="skill-tag">Stakeholder Management</span>
-            <span class="skill-tag">Requirements Analysis (PRD)</span>
-            <span class="skill-tag">Team Leadership (Up to 30)</span>
-            <span class="skill-tag">Resource Allocation & Risk Management</span>
-            <span class="skill-tag">Agile Iterative Delivery</span>
-            <span class="skill-tag">Validation Engineering (SII)</span>
+            <span class="skill-tag" data-i18n="sk1">תכנון וניהול פרויקטים</span>
+            <span class="skill-tag" data-i18n="sk2">ניהול בעלי עניין וממשקים</span>
+            <span class="skill-tag" data-i18n="sk3">אפיון דרישות ומוצר</span>
+            <span class="skill-tag" data-i18n="sk4">הובלת צוותים (עד 30 אנשי צוות)</span>
+            <span class="skill-tag" data-i18n="sk5">הקצאת משאבים וניהול סיכונים</span>
+            <span class="skill-tag" data-i18n="sk6">פיתוח איטרטיבי והטמעה בשטח</span>
+            <span class="skill-tag" data-i18n="sk7">ולידציה הנדסית ובדיקות תקנים</span>
           </div>
 
           <div class="hero-links">
             <a href="#work-mabat" class="btn-editorial solid" data-i18n="cta1">01 מערכת מב"ט (דמו חי)</a>
             <a href="#work-backpack" class="btn-editorial ghost" data-i18n="cta2">02 תיק אחזקה מבצעי</a>
-            <a href="https://www.linkedin.com/in/yuli-shamir-a19510447" target="_blank" rel="noopener" class="btn-editorial ghost">פרופיל LinkedIn</a>
-            <a href="mailto:yulishshsh1@gmail.com" class="btn-editorial ghost">yulishshsh1@gmail.com | 052-7251171</a>
+            <a href="https://www.linkedin.com/in/yuli-shamir-a19510447" target="_blank" rel="noopener" class="btn-editorial ghost" data-i18n="cta3">פרופיל לינקדאין</a>
+            <a href="mailto:yulishshsh1@gmail.com" class="btn-editorial ghost" data-i18n="cta4">יצירת קשר: 052-7251171 | yulishshsh1@gmail.com</a>
           </div>
         </div>
 
         <!-- Visual Continuity with Yuli's LinkedIn Profile Banner -->
         <div class="signature-art-card">
-          <img src="yuli-banner.png" alt="From real needs to working products | Yuli Shamir | Project Manager" fetchpriority="high" />
+          <img src="yuli-banner.png" alt="מצרכים אמיתיים בשטח למוצרים ופרויקטים עובדים | יולי שמיר | מנהלת פרויקטים" fetchpriority="high" />
           <div class="signature-caption">
-            <span>ולידציית מעבדה (מכון התקנים) ⬅ תיק אחזקה מבצעי (חומרה) ⬅ מערכת מב"ט (תוכנה)</span>
-            <strong>Project Manager</strong>
+            <span data-i18n="sigCap">ולידציית מעבדה (מכון התקנים) ⬅ תיק אחזקה מבצעי (חומרה) ⬅ מערכת מב"ט (תוכנה)</span>
+            <strong data-i18n="sigRole">ניהול פרויקטים ומוצר</strong>
           </div>
         </div>
       </div>
@@ -1060,7 +1075,7 @@
           <span class="index-label" data-i18n="stat2">אנשי צוות תחת פיקוד וניהול ישיר בתפקידי מפל"ג טנ"א וקצינת תא חטיבתי, לצד ריכוז כשירות רוחבי של 4 גדודים בחטיבה</span>
         </div>
         <div class="index-cell">
-          <span class="index-num">מב"ט (PWA)</span>
+          <span class="index-num" data-i18n="stat3Num">מערכת מב"ט</span>
           <span class="index-label" data-i18n="stat3">יוזמה והובלת פיתוח של מערכת דיווח כשירות ומעקב תקלות מכל מכשיר גם ללא קליטה, מאפיון דרישות ועד מוצר פעיל</span>
         </div>
         <div class="index-cell">
@@ -1076,7 +1091,7 @@
     <section id="work-mabat" class="case-section">
       <div class="case-grid">
         <aside class="case-sidebar">
-          <span class="case-index-tag">PROJECT 01 / DIGITAL PRODUCT PROJECT</span>
+          <span class="case-index-tag" data-i18n="mabatTag">פרויקט 01 / ייזום והובלת מוצר דיגיטלי</span>
           <h2 data-i18n="mabatTitle">מב"ט: מערכת בקרת טכנולוגיות</h2>
           <dl class="meta-dl">
             <div class="meta-row">
@@ -1093,7 +1108,7 @@
             </div>
             <div class="meta-row">
               <dt>תכולה טכנית</dt>
-              <dd>PWA, Offline Queue, RBAC, CSV/PDF</dd>
+              <dd>אפליקציית ווב, עבודה ללא קליטה, הרשאות ופענוח דוחות</dd>
             </div>
             <div class="meta-row">
               <dt>ביטחון מידע</dt>
@@ -1113,20 +1128,20 @@
             <div class="narrative-col">
               <h3>תפקידי בהובלת הפרויקט</h3>
               <p>
-                יזמתי את הפרויקט ותרגמתי את צרכי השטח לדרישות מערכת, תרשימי זרימה (User Flows) ותעדוף פיצ'רים. עבדתי בצמוד עם מפתח תוכנה משלב הקונספט ועד למוצר עובד, סקרתי איטרציות, אישרתי גרסאות והטמעתי משוב ממשתמשים בשטח.
+                יזמתי את הפרויקט ותרגמתי את צרכי השטח לדרישות מערכת, תרשימי זרימת משתמש ותעדוף יכולות. עבדתי בצמוד עם מפתח תוכנה משלב הקונספט ועד למוצר עובד, סקרתי איטרציות, אישרתי גרסאות והטמעתי משוב ממשתמשים בשטח.
               </p>
             </div>
             <div class="narrative-col">
               <h3>תכולת המוצר ואימפקט</h3>
               <p>
-                המערכת כוללת דשבורד אחוזי כשירות (ענף קווי ואורגני), דיווח תקלות ב-4 שלבים השומר נתונים בתור מקומי ללא קליטה, פענוח אוטומטי של הודעות וואטסאפ ו-CSV, הרשאות בעלים/עורך/צופה הנאכפות בשרת, והתרעות בוקר אוטומטיות בפעמון.
+                המערכת כוללת דשבורד אחוזי כשירות (ענף קווי ואורגני), דיווח תקלות ב-4 שלבים השומר נתונים בתור מקומי ללא קליטה, פענוח אוטומטי של הודעות וואטסאפ וטבלאות, הרשאות בעלים/עורך/צופה הנאכפות בשרת, והתרעות בוקר אוטומטיות בפעמון.
               </p>
             </div>
           </div>
 
           <div class="view-bar" role="tablist">
             <button type="button" class="view-link active" id="vLink-sim" onclick="setMabatView('sim')">01 התנסות חיה בממשק מב"ט ויומן הכשירות</button>
-            <button type="button" class="view-link" id="vLink-wa" onclick="setMabatView('wa')">02 מנוע פענוח דיווחי וואטסאפ ו-CSV</button>
+            <button type="button" class="view-link" id="vLink-wa" onclick="setMabatView('wa')">02 מנוע פענוח דיווחי וואטסאפ וטבלאות</button>
             <button type="button" class="view-link" id="vLink-rules" onclick="setMabatView('rules')">03 מפרט דרישות, התרעות בוקר ותוכנית הרחבה</button>
           </div>
 
@@ -1235,7 +1250,7 @@
             <div class="product-frame">
               <div class="field-row-2">
                 <div class="work-panel" style="margin:0;">
-                  <strong style="display:block; margin-block-end:0.4rem; color:#f8fafc;">הדבקת דוח טקסט חופשי מוואטסאפ או קובץ CSV</strong>
+                  <strong style="display:block; margin-block-end:0.4rem; color:#f8fafc;">הדבקת דוח טקסט חופשי מוואטסאפ או טבלת נתונים</strong>
                   <p style="font-size:0.82rem; color:#94a3b8; margin-block-end:0.75rem;">
                     המערכת מזהה אוטומטית את האמצעי, הסטטוס והתקלה מתוך ההודעה החופשית ומעדכנת את תמונת הכשירות:
                   </p>
@@ -1249,12 +1264,10 @@
                   </div>
                 </div>
                 <div class="work-panel" style="margin:0;">
-                  <strong style="display:block; margin-block-end:0.4rem; color:#f8fafc;">פלט מובנה שנוצר אוטומטית במערכת</strong>
-                  <pre id="waParsedBox" style="background:#070a09; color:#cbd5e1; padding:0.9rem; border-radius:4px; border:1px solid #1f302b; font-size:0.8rem; overflow-x:auto; direction:ltr; text-align:left;">[
-  { "id": "דמו-928", "status": "כשיר", "location": "נקודת בראבו" },
-  { "id": "דמו-774", "status": "לא כשיר", "issue": "תקלת כיול" },
-  { "id": "דמו-512", "status": "כשיר", "category": "אורגני" }
-]</pre>
+                  <strong style="display:block; margin-block-end:0.4rem; color:#f8fafc;">פלט מובנה שנוצר אוטומטית במערכת (מימין לשמאל)</strong>
+                  <pre id="waParsedBox" style="background:#070a09; color:#cbd5e1; padding:0.9rem; border-radius:4px; border:1px solid #1f302b; font-size:0.84rem; overflow-x:auto; direction:rtl; text-align:right; font-family:var(--font-main); line-height:1.7;">• מזהה אמצעי: דמו-928 | סטטוס: כשיר | מיקום: נקודת בראבו
+• מזהה אמצעי: דמו-774 | סטטוס: לא כשיר | תקלה: תקלת כיול בנקודת גמא
+• מזהה אמצעי: דמו-512 | סטטוס: כשיר | קטגוריה: ענף אורגני</pre>
                 </div>
               </div>
             </div>
@@ -1264,7 +1277,7 @@
           <div class="view-pane" id="vPane-rules">
             <div tabindex="0" role="region" aria-labelledby="mabat-scope-cap" class="table-wrapper" style="border-block-start:none; margin-block-end:2rem;">
               <table style="--label-2: 'דרישת המוצר שאפיינתי בתכולת המערכת'; --label-3: 'מימוש במערכת מב״ט';">
-                <caption id="mabat-scope-cap">מיפוי צרכי משתמשים לדרישות המוצר (Product Scope Matrix)</caption>
+                <caption id="mabat-scope-cap">מיפוי צרכי משתמשים לדרישות המוצר ותכולת המערכת</caption>
                 <thead>
                   <tr>
                     <th>צורך המשתמש בשטח ובפיקוד</th>
@@ -1285,17 +1298,17 @@
                   </tr>
                   <tr>
                     <th>עבודה בתנאי קליטה מוגבלת</th>
-                    <td>פונקציונליות Offline מלאה לשימוש בשטח ובתמרון</td>
+                    <td>פונקציונליות עבודה מלאה ללא קליטה לשימוש בשטח ובתמרון</td>
                     <td>שמירת דיווחים בתור מקומי במכשיר וסנכרון אוטומטי בחזרת החיבור</td>
                   </tr>
                   <tr>
                     <th>בקרת גישה ומידע מותאם תפקיד</th>
-                    <td>ניהול הרשאות מבוסס תפקיד (RBAC) וכניסה מאובטחת</td>
-                    <td>הזדהות ב-4 שלבים (רשימת מורשים, סיסמה, טלפון וקוד SMS) והרשאות בעלים, עורך וצופה הנאכפות בשרת</td>
+                    <td>ניהול הרשאות מבוסס תפקיד וכניסה מאובטחת</td>
+                    <td>הזדהות ב-4 שלבים (רשימת מורשים, סיסמה, טלפון וקוד אימות) והרשאות בעלים, עורך וצופה הנאכפות בשרת</td>
                   </tr>
                   <tr>
                     <th>שיתוף דוחות מהיר בין דרגים</th>
-                    <td>קליטה וייצוא של דוחות וואטסאפ, CSV ו-PDF</td>
+                    <td>קליטה וייצוא של דוחות וואטסאפ, טבלאות ומסמכים</td>
                     <td>מנוע פענוח טקסט חופשי מוואטסאפ וייצוא דוחות מובנים לדרג הממונה</td>
                   </tr>
                 </tbody>
@@ -1342,12 +1355,12 @@
     <section id="work-backpack" class="case-section">
       <div class="case-grid">
         <aside class="case-sidebar">
-          <span class="case-index-tag">PROJECT 02 / PHYSICAL PRODUCT &amp; DESIGN LEAD</span>
+          <span class="case-index-tag" data-i18n="bpTag">פרויקט 02 / אפיון, תכנון והובלת מוצר פיזי</span>
           <h2 data-i18n="bpTitle">תיק אחזקה מבצעי ("מענה שלם אחזקתי נייד")</h2>
           <dl class="meta-dl">
             <div class="meta-row">
               <dt>תפקיד</dt>
-              <dd>Product Design &amp; Project Lead</dd>
+              <dd>מובילת הפרויקט, האפיון והתכנון ההנדסי</dd>
             </div>
             <div class="meta-row">
               <dt>תכולה</dt>
@@ -1435,7 +1448,7 @@
                     <button type="button" class="marker-tab" id="mTab-5" onclick="selectBpZone(5)">06 רשמ"צ מובנה (20 פריטים)</button>
                   </div>
 
-                  <span id="zCode" style="font-family:var(--font-mono); font-size:0.75rem; color:var(--muted); display:block; margin-block-end:0.3rem;">VIEW 01 / CONCEPT RENDER &amp; MODULAR ARCHITECTURE</span>
+                  <span id="zCode" style="font-family:var(--font-main); font-size:0.78rem; font-weight:700; color:var(--muted); display:block; margin-block-end:0.3rem;">תצוגה 01 / הדמיית קונספט וארכיטקטורה מודולרית</span>
                   <h3 id="zTitle" style="font-size:1.25rem; margin-block-end:0.7rem;">הדמיית הקונספט ההנדסי וערכות הניתוק המודולריות</h3>
                   <p id="zDesc" style="font-size:0.91rem; color:var(--muted); margin-block-end:1.2rem;">
                     תכנון ארכיטקטורת התיק טרם הייצור: הפרדה מובנית בין מדור החילוץ והגרירה (רצועות גרירה 3 מ' ו-9 מ', כבלי הנעה וסט שאקלים מעוגנים) לבין פאוצ'ים פריקים המאפשרים לטכנאי לשלוף תת-ערכה ייעודית למשימה נקודתית.
@@ -1458,7 +1471,7 @@
 
           <div tabindex="0" role="region" aria-labelledby="bp-spec-cap" class="table-wrapper" style="margin-block-top:2rem;">
             <table style="--label-2: 'הצורך המבצעי של אנשי האחזקה בשטח'; --label-3: 'יישום בתכנון ההנדסי ובאב-הטיפוס המיוצר';">
-              <caption id="bp-spec-cap">דרישות התכנון והמימוש בתיק "מענה שלם אחזקתי נייד" (Design &amp; BOM Matrix)</caption>
+              <caption id="bp-spec-cap">דרישות התכנון והמימוש ההנדסי בתיק "מענה שלם אחזקתי נייד"</caption>
               <thead>
                 <tr>
                   <th>דרישת תכנון והנדסה</th>
@@ -1468,24 +1481,24 @@
               </thead>
               <tbody>
                 <tr>
-                  <th>01 פתיחת מזוודה מלאה (180° Clamshell) ותאי ספוג קשיח</th>
+                  <th>01 פתיחת מזוודה מלאה (180 מעלות) ותאי ספוג קשיח</th>
                   <td>פריסה מיידית של ציוד כבד (פטיש כוח, שאקלים ורצועות גרירה) בשטח ללא צורך בחיטוט בעומק התיק</td>
                   <td>בניית תא תחתון מרופד בספוג קשיח עם מכסה ייעודי לרצועות גרירה (3 מ' ו-9 מ'), עיגון שאקלים ומארז פטיש כוח + מטען + 2 סוללות</td>
                 </tr>
                 <tr>
-                  <th>02 תיוג חזותי וכיסי שליפה מהירה (Visual Poka-Yoke)</th>
+                  <th>02 תיוג חזותי וכיסי שליפה מהירה למניעת טעויות</th>
                   <td>איתור מיידי של מתכלים וכלי עבודה קטנים גם בתנאי חושך ולחץ מבצעי</td>
-                  <td>דופן עליונה עם כיסים מתויגים ואבזמי שחרור מהיר: נורות H4, מטען טאבלט, אזיקונים, סרט בידוד, שמן נשקים ומטליות</td>
+                  <td>דופן עליונה עם כיסים מתויגים ואבזמי שחרור מהיר: נורות רכב ראשיות, מטען טאבלט, אזיקונים, סרט בידוד, שמן נשקים ומטליות</td>
                 </tr>
                 <tr>
-                  <th>03 רשמ"צ מובנה בחלון שקוף (20-Item Built-in BOM)</th>
+                  <th>03 רשמ"צ מובנה בחלון שקוף (20 פריטי ליבה)</th>
                   <td>מניעת שכחה או אובדן של כלים קריטיים בשטח וביצוע בדיקת מוכנות מהירה לפני יציאה למשימה</td>
                   <td>תפירת חלון ויניל שקוף בדופן הפנימית הכולל רשימת מצאי תקנית של 20 פריטים (מפתח רינג ראצ'ט, בוקסה 19, סט סיגנט, לום, פטיש, כבלי הנעה ועוד)</td>
                 </tr>
                 <tr>
                   <th>04 הנדסת אנוש ומערכת גב לנשיאת משקל כבד</th>
                   <td>ניידות רגלית של טכנאי הנושא ציוד מתכת, שאקלים וכלי עבודה בתוואי שטח משתנה</td>
-                  <td>מערכת גב ארגונומית מרופדת עם רצועת מותן רחבה, רצועות הידוק צדדיות וממשק MOLLE חיצוני לשמירה על מרכז כובד צמוד לגב</td>
+                  <td>מערכת גב ארגונומית מרופדת עם רצועת מותן רחבה, רצועות הידוק צדדיות ורצועות עיגון חיצוניות לשמירה על מרכז כובד צמוד לגב</td>
                 </tr>
               </tbody>
             </table>
@@ -1500,8 +1513,8 @@
     <section id="work-validation" class="case-section">
       <div class="case-grid">
         <aside class="case-sidebar">
-          <span class="case-index-tag">03 / VALIDATION & MEASUREMENT PLAN</span>
-          <h2>מתודולוגיית ניסויים ותוכנית מדידה</h2>
+          <span class="case-index-tag" data-i18n="valTag">פרק 03 / מתודולוגיית ניסויים ותוכנית מדידה</span>
+          <h2 data-i18n="valTitle">מתודולוגיית ניסויים ותוכנית מדידה</h2>
           <p style="font-size:0.87rem; color:var(--muted);">
             כיצד אני משווה בין חלופות תכנוניות ומקבלת החלטות מוצר מבוססות נתונים בשלב האיטרציות הבא.
           </p>
@@ -1534,8 +1547,8 @@
     <section id="work-career" class="case-section">
       <div class="case-grid">
         <aside class="case-sidebar">
-          <span class="case-index-tag">04 / EXPERIENCE & EDUCATION</span>
-          <h2>ניסיון מקצועי והשכלה</h2>
+          <span class="case-index-tag" data-i18n="expTag">פרק 04 / ניסיון מקצועי והשכלה הנדסית</span>
+          <h2 data-i18n="expTitle">ניסיון מקצועי והשכלה</h2>
           <dl class="meta-dl">
             <div class="meta-row">
               <dt>דיפלומה</dt>
@@ -1547,11 +1560,11 @@
             </div>
             <div class="meta-row">
               <dt>הסמכה נוספת</dt>
-              <dd>IBM Product Manager (בתכנון)</dd>
+              <dd>ניהול מוצר ופרויקטים (בהכשרה)</dd>
             </div>
             <div class="meta-row">
-              <dt>כלים</dt>
-              <dd>Jira, Excel, PowerPoint, מושגי SAP</dd>
+              <dt>כלים ומערכות</dt>
+              <dd>ניהול פרויקטים ומשימות, ניתוח נתונים וניהול משאבים</dd>
             </div>
           </dl>
         </aside>
@@ -1571,27 +1584,27 @@
               <tbody>
                 <tr>
                   <th>אוקטובר 2022 עד היום</th>
-                  <td><strong>קצינת טכנולוגיה ואחזקה (Technology & Maintenance Officer)</strong><br/>צה"ל (תפקידי פיקוד וניהול בגדוד, בחטיבה וביחידות טכנולוגיות)</td>
+                  <td><strong>קצינת טכנולוגיה ואחזקה</strong><br/>צה"ל (תפקידי פיקוד וניהול בגדוד, בחטיבה וביחידות טכנולוגיות)</td>
                   <td>ניהול תוכניות עבודה, הקצאת משאבים ותעדוף תיקונים לתמיכה בכשירות מבצעית. הובלת צוותים של 15 ועד 30 אנשי צוות תחת לוחות זמנים קשיחים. תיאום פתרון תקלות, ניהול חלפים ופינוי אמצעים, וריכוז תמונת כשירות רוחבית של 4 גדודים במפקדת החטיבה עבור דרג בכיר.</td>
-                  <td>Project Planning, Team Leadership (30), Resource Allocation, Stakeholder Management</td>
+                  <td>תכנון וניהול תוכניות עבודה, הובלת צוותים (עד 30), הקצאת משאבים, ניהול ממשקים</td>
                 </tr>
                 <tr>
                   <th>יוני 2026 עד היום</th>
-                  <td><strong>מייסדת ומנהלת מוצר ופרויקט (Founder & Product Manager)</strong><br/>מערכת מב"ט ותיק אחזקה מבצעי</td>
-                  <td>ייזום ואפיון מוצר מובייל (PWA) לדיווח כשירות ומעקב תקלות, כתיבת דרישות וזרימות משתמש, והובלת מפתח תוכנה מאפס למוצר עובד. במקביל, פיתוח קונספט ושרטוטי תכנון לתיק אחזקה מבצעי ותיאום בחינתו ופיתוחו מול הדרג הבכיר וספקי צה"ל.</td>
-                  <td>Requirements Analysis, Agile Iterative Delivery, User Flows, UAT, Supplier Coordination</td>
+                  <td><strong>מייסדת ומנהלת מוצר ופרויקט</strong><br/>מערכת מב"ט ותיק אחזקה מבצעי</td>
+                  <td>ייזום ואפיון מוצר מובייל לדיווח כשירות ומעקב תקלות, כתיבת דרישות וזרימות משתמש, והובלת מפתח תוכנה מאפס למוצר עובד. במקביל, פיתוח קונספט ושרטוטי תכנון לתיק אחזקה מבצעי ותיאום בחינתו ופיתוחו מול הדרג הבכיר וספקי צה"ל.</td>
+                  <td>אפיון דרישות מוצר, פיתוח איטרטיבי, תרשימי זרימת משתמש, בדיקות קבלה ותיאום ספקים</td>
                 </tr>
                 <tr>
                   <th>2020 עד אוקטובר 2022</th>
-                  <td><strong>מהנדסת ולידציה (Validation Engineer)</strong><br/>מכון התקנים הישראלי (Standards Institution of Israel)</td>
-                  <td>בדיקת מוצרי חשמל ואלקטרוניקה מול תקנים מחמירים, דרישות טכניות וקריטריוני בטיחות. ביצוע בדיקות חזותיות, פירוק מוצרים, בדיקות פונקציונליות וחשמליות ותיעוד מפורט בדו"חות הנדסיים. בחצי השנה האחרונה מעבר למעבדת הכימיה לביצוע בדיקות נדידה (Migration Tests) לחומרים במגע עם מזון מול ספים רגולטוריים.</td>
-                  <td>Validation Engineering, Functional Testing, Standards Compliance, Technical Documentation</td>
+                  <td><strong>מהנדסת ולידציה ובדיקות תקנים</strong><br/>מכון התקנים הישראלי</td>
+                  <td>בדיקת מוצרי חשמל ואלקטרוניקה מול תקנים מחמירים, דרישות טכניות וקריטריוני בטיחות. ביצוע בדיקות חזותיות, פירוק מוצרים, בדיקות פונקציונליות וחשמליות ותיעוד מפורט בדו"חות הנדסיים. בחצי השנה האחרונה מעבר למעבדת הכימיה לביצוע בדיקות נדידה לחומרים במגע עם מזון מול ספים רגולטוריים.</td>
+                  <td>ולידציה הנדסית, בדיקות פונקציונליות וחשמליות, עמידה בתקנים ותיעוד הנדסי</td>
                 </tr>
                 <tr>
                   <th>2020 עד 2022</th>
-                  <td><strong>הנדסאית אלקטרוניקה ומדעי המחשב (Practical Engineering Diploma)</strong><br/>מכללת עתיד לוגיטק, רשת חינוך עתיד</td>
-                  <td>לימודי תשתית הנדסית: אלקטרוניקה תקבילית וספרתית, VHDL, מערכות משובצות מחשב (Embedded Systems), מיקרו-מעבדים ותקשורת ספרתית ותקבילית. השלמת קורס טכנאית מערכות נשק מתקדמות (2022–2023) וקורס קצינים והשלמת קציני טנ"א (2023).</td>
-                  <td>Electronics, Embedded Systems, VHDL, Root Cause Analysis, System Troubleshooting</td>
+                  <td><strong>הנדסאית אלקטרוניקה ומדעי המחשב (דיפלומה בהצטיינות)</strong><br/>מכללת עתיד לוגיטק, רשת חינוך עתיד</td>
+                  <td>לימודי תשתית הנדסית: אלקטרוניקה תקבילית וספרתית, תכנון חומרה, מערכות משובצות מחשב, מיקרו-מעבדים ותקשורת ספרתית ותקבילית. השלמת קורס טכנאית מערכות נשק מתקדמות (2022–2023) וקורס קצינים והשלמת קציני טנ"א (2023).</td>
+                  <td>אלקטרוניקה ספרתית ותקבילית, מערכות משובצות מחשב, תחקור שורש תקלה ואבחון מערכות</td>
                 </tr>
               </tbody>
             </table>
@@ -1603,8 +1616,8 @@
   </main>
 
   <footer class="page-wrap site-footer">
-    <span>Yuli Shamir | Project Manager | Technical Operations & Product Projects</span>
-    <span>yulishshsh1@gmail.com | +972 52 725 1171 | linkedin.com/in/yuli-shamir-a19510447</span>
+    <span data-i18n="footerLeft">יולי שמיר | מנהלת פרויקטים — תפעול טכני, הובלת צוותים ומוצרים</span>
+    <span data-i18n="footerRight">טלפון: 052-7251171 | דוא"ל: yulishshsh1@gmail.com</span>
   </footer>
 
   <script>
@@ -1719,22 +1732,23 @@
       const raw = document.getElementById('waText').value.trim();
       if (!raw) return;
       const lines = raw.split(/\r?\n/).filter(Boolean);
-      const parsed = [];
+      const parsedLines = [];
       lines.forEach(l => {
         const fault = /לא כשיר|תקל|ממתין/.test(l);
         const m = l.match(/(דמו-\d+|\d{3,4})/);
-        const id = m ? m[1] : 'דמו-WA';
-        parsed.push({ id, status: fault ? 'לא כשיר' : 'כשיר', text: l.trim() });
+        const id = m ? m[1] : 'דמו-וואטסאפ';
+        const statusText = fault ? 'לא כשיר' : 'כשיר';
+        parsedLines.push(`• מזהה אמצעי: ${id} | סטטוס: ${statusText} | פירוט: ${l.trim()}`);
         items.unshift({ id, cat: 'קווי / פוענח מוואטסאפ', desc: l.trim(), fit: !fault, synced: isOnline });
       });
-      document.getElementById('waParsedBox').textContent = JSON.stringify(parsed, null, 2);
+      document.getElementById('waParsedBox').textContent = parsedLines.join('\n');
       renderLedger();
     }
 
     const zones = [
       {
         img: 'bp-render.jpg',
-        code: 'VIEW 01 / CONCEPT RENDER & MODULAR ARCHITECTURE',
+        code: 'תצוגה 01 / הדמיית קונספט וארכיטקטורה מודולרית',
         title: 'הדמיית הקונספט ההנדסי וערכות הניתוק המודולריות',
         desc: 'תכנון ארכיטקטורת התיק טרם הייצור: הפרדה מובנית בין מדור החילוץ והגרירה (רצועות גרירה 3 מ׳ ו-9 מ׳, כבלי הנעה וסט שאקלים מעוגנים) לבין פאוצ׳ים פריקים המאפשרים לטכנאי לשלוף תת-ערכה ייעודית למשימה נקודתית.',
         mat: 'אפיון הנדסי, הדמיית קונספט וחלוקת תאים',
@@ -1742,15 +1756,15 @@
       },
       {
         img: 'bp-interior.jpg',
-        code: 'VIEW 02 / PHYSICAL PROTOTYPE — 180° CLAMSHELL INTERIOR',
+        code: 'תצוגה 02 / אב-טיפוס פיזי — פנים התיק בפתיחה מלאה (180 מעלות)',
         title: 'פנים התיק בפועל: תאי ספוג קשיח וכיסי שליפה מתויגים',
         desc: 'המוצר המוגמר בפתיחה מלאה: בדופן התחתונה תא ספוג קשיח עם מכסה ואבזמים עבור רצועות הגרירה, לצד עיגון לשאקלים, פטיש כוח + מטען ותא נורות. בדופן העליונה כיסים מתויגים (מטען טאבלט, אזיקונים, סרט בידוד, שמן נשקים, מטלית) וחלון רשמ״צ שקוף.',
-        mat: 'ייצור סדרתי עם חלוקת תאים מותאמת (Custom Foam & Pouches)',
+        mat: 'ייצור סדרתי עם חלוקת תאים וספוגים מותאמים אישית',
         kpi: 'נגישות מיידית לכל כלי ללא פירוק התיק'
       },
       {
         img: 'bp-towing-open.jpg',
-        code: 'VIEW 03 / HINGED RECOVERY & PNEUMATIC COMPARTMENT (OPEN)',
+        code: 'תצוגה 03 / תא החילוץ הפנימי ומערך צינורות האוויר (פתוח)',
         title: 'פתיחת תא החילוץ הפנימי: רצועות גרירה וסט צינורות אוויר',
         desc: 'פתיחת מכסה הצירים המרופד של הארגז הפנימי חושפת את מערך החילוץ והאוויר המאורגן: רצועות גרירה 3 מ׳ ו-9 מ׳, סט צינורות אוויר ספירליים (אדום וכחול) עם מחברי לחץ מהירים לרכבים ממוגנים, ולצידם סטי השאקלים ופטיש הכוח המעוגנים במקומם.',
         mat: 'ארגז פנימי מוקשח עם מכסה צירים מרופד ספוג',
@@ -1758,26 +1772,26 @@
       },
       {
         img: 'bp-exterior.jpg',
-        code: 'VIEW 04 / CLOSED TACTICAL SHELL & MOLLE WEBBING',
+        code: 'תצוגה 04 / מעטפת חיצונית מוקשחת ורצועות עיגון',
         title: 'מעטפת חיצונית עמידה ("מענה שלם אחזקתי נייד")',
-        desc: 'התיק במצב סגור ומוכן להעמסה: בד קורדורה עמיד לשחיקה בתנאי שטח, רצועות MOLLE בחזית לעיגון ציוד משלים, רצועות כיווץ והידוק צדדיות לשמירה על מרכז כובד יציב, ותג הפרויקט הרשמי של מחלקת הטכנולוגיה והאחזקה.',
-        mat: 'מעטפת חיצונית מוקשחת + רצועות MOLLE ואבזמי הידוק',
+        desc: 'התיק במצב סגור ומוכן להעמסה: בד קורדורה עמיד לשחיקה בתנאי שטח, רצועות עיגון בחזית לציוד משלים, רצועות כיווץ והידוק צדדיות לשמירה על מרכז כובד יציב, ותג הפרויקט הרשמי של מחלקת הטכנולוגיה והאחזקה.',
+        mat: 'מעטפת קורדורה חיצונית מוקשחת עם רצועות עיגון ואבזמי הידוק',
         kpi: 'עמידות מלאה בתנאי שטח ושמירה על שלמות הכלים'
       },
       {
         img: 'bp-fitting.jpg',
-        code: 'VIEW 05 / ERGONOMIC HARNESS & WORKSHOP FOAM FITTING',
+        code: 'תצוגה 05 / הנדסת אנוש, התאמת ספוגים וניסוי נשיאה בסדנה',
         title: 'הנדסת אנוש, התאמת ספוגים וניסוי נשיאה על הגב',
         desc: 'תיעוד מתוך שלב הפיתוח וניסויי ההתאמה בסדנה (ניתן לראות על הרצפה את שאריות חיתוך הספוגים המותאמים לכלים): בדיקת איזון המשקל על גב הטכנאי, כוונון רצועות הכתפיים ורצועת המותן התומכת לנשיאת כלי מתכת כבדים בתנועה רגלית.',
-        mat: 'ניסויי הנדסת אנוש (Ergonomic Field Testing & Prototyping)',
+        mat: 'ניסויי הנדסת אנוש והתאמת אב-טיפוס בסדנה',
         kpi: 'חלוקת עומס אופטימלית בנשיאה ממושכת'
       },
       {
         img: 'bp-bom.jpg',
-        code: 'VIEW 06 / BUILT-IN 20-ITEM ENGINEERING BOM (רשמ"צ)',
+        code: 'תצוגה 06 / רשמ"צ מובנה של 20 פריטי ליבה',
         title: 'רשמ״צ מובנה של 20 פריטי ליבה לבקרת כשירות ותכולה',
-        desc: 'חלון ויניל שקוף התפור בחלקו הפנימי של התיק ומכיל את מפרט התכולה התקני (20 פריטים): מפתח רינג ראצ׳ט, בוקסה ארוכה 19, נורות H4, פטיש כוח + מטען + 2 סוללות, רצועות גרירה 3 מ׳ ו-9 מ׳, צינורות אוויר, פטיש, לום, כבלי הנעה, סט סיגנט, שאקלים וציוד מיגון.',
-        mat: 'בקרת תצורה ותכולה מובנית (Built-in BOM Verification)',
+        desc: 'חלון ויניל שקוף התפור בחלקו הפנימי של התיק ומכיל את מפרט התכולה התקני (20 פריטים): מפתח רינג ראצ׳ט, בוקסה ארוכה 19, נורות ראשיות, פטיש כוח + מטען + 2 סוללות, רצועות גרירה 3 מ׳ ו-9 מ׳, צינורות אוויר, פטיש, לום, כבלי הנעה, סט סיגנט, שאקלים וציוד מיגון.',
+        mat: 'בקרת תצורה ותכולה מובנית בחלון שקוף',
         kpi: '100% בקרת ציוד לפני ואחרי כל משימת אחזקה'
       }
     ];
@@ -1801,26 +1815,46 @@
     let isHeb = true;
     const enText = {
       opsecText: 'OPSEC Notice: All identifiers and figures on this site are fictional for Project & Product Management demonstration only, with zero asset quantities and zero classified information.',
+      opsecRight: 'Yuli Shamir | Project Manager Portfolio',
       brandName: 'Yuli Shamir',
       brandRole: 'Project Manager | Technical Operations, Team Leadership & Product Projects',
       nav1: '01 Mabat System',
       nav2: '02 Field Backpack',
       nav3: '03 Validation Plan',
       nav4: '04 Experience',
+      navLinkedin: 'LinkedIn',
       themeLabel: 'Light / Dark',
       heroKicker: 'Project Manager | Technical Operations & Team Leadership | Digital & Physical Product Projects',
       heroHeadline: 'From real needs to working products and operational delivery.',
       heroBio: 'Project manager with a background in technical operations, team leadership and product validation. As a Technology & Maintenance Officer, I have led teams of up to 30, managed work plans and coordinated priorities, resources and equipment readiness across four battalions at brigade headquarters. Alongside my service, I founded Mabat, an independent mobile product for equipment-status reporting and fault tracking, and developed the concept and design sketches for a field maintenance backpack now used by operational maintenance teams. Previously, I worked as a Validation Engineer at the Standards Institution of Israel (SII).',
+      sk1: 'Project Planning',
+      sk2: 'Stakeholder Management',
+      sk3: 'Requirements Analysis (PRD)',
+      sk4: 'Team Leadership (Up to 30)',
+      sk5: 'Resource Allocation & Risk Management',
+      sk6: 'Agile Iterative Delivery',
+      sk7: 'Validation Engineering (SII)',
       cta1: '01 Explore Mabat Live Demo',
       cta2: '02 Field Maintenance Backpack',
+      cta3: 'LinkedIn Profile',
+      cta4: 'yulishshsh1@gmail.com | +972-52-7251171',
+      sigCap: 'Lab Validation (SII) ➔ Field Maintenance Backpack (Hardware) ➔ Mabat System (Software)',
+      sigRole: 'Project Manager',
       stat1: 'Continuous experience across IDF technical operations & team leadership (Oct 2022 to Present) and SII engineering validation (2020 to Oct 2022)',
       stat2: 'Personnel led across battalion and brigade assignments, plus coordinating maintenance readiness across four battalions at brigade headquarters',
+      stat3Num: 'Mabat (PWA)',
       stat3: 'Independently initiated mobile web product (PWA) for equipment readiness and fault tracking, leading requirements, developer work and user feedback',
       stat4: 'Field requirements, design sketches and stakeholder coordination with division leadership and IDF suppliers for a backpack now used in the field',
+      mabatTag: 'PROJECT 01 / DIGITAL PRODUCT PROJECT',
       mabatTitle: 'Mabat: Technology Readiness Control System',
+      bpTag: 'PROJECT 02 / PHYSICAL PRODUCT & DESIGN LEAD',
       bpTitle: 'Field Maintenance Backpack',
-      bpSoonTitle: 'Coming Soon',
-      bpSoonSub: 'Design sketch and visual preview coming soon'
+      valTag: '03 / VALIDATION & MEASUREMENT PLAN',
+      valTitle: 'Validation & Measurement Plan',
+      expTag: '04 / EXPERIENCE & EDUCATION',
+      expTitle: 'Professional Experience & Education',
+      footerLeft: 'Yuli Shamir | Project Manager | Technical Operations & Product Projects',
+      footerRight: 'yulishshsh1@gmail.com | +972 52 725 1171 | linkedin.com/in/yuli-shamir-a19510447'
     };
 
     function switchLang() {
