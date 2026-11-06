@@ -854,7 +854,7 @@
     }
     .bp-thumb-strip {
       display: grid;
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(7, 1fr);
       gap: 0.45rem;
       padding: 0.75rem 1rem;
       background: #080c0b;
@@ -862,7 +862,7 @@
     }
     @media (max-width: 640px) {
       .bp-thumb-strip {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         padding: 0.6rem;
       }
     }
@@ -1585,32 +1585,36 @@
             <div class="cad-grid">
               <div class="cad-image-col">
                 <div class="cad-image-box">
-                  <img id="bpMainImg" src="bp-render.jpg" alt="שרטוט הנדסי ומפרט ייצור למפעל של תיק האחזקה המבצעי (מענה שלם אחזקתי נייד)" loading="lazy" />
+                  <img id="bpMainImg" src="bp-blueprint-bw.jpg" alt="שרטוט מבנה הנדסי בשחור-לבן של תיק האחזקה המבצעי (מענה שלם אחזקתי נייד)" loading="lazy" />
                 </div>
                 <div class="bp-thumb-strip" role="tablist" aria-label="גלריית תמונות תיק אחזקה מבצעי">
-                  <button type="button" class="bp-thumb-btn active" id="bpThumb-0" onclick="selectBpZone(0)" title="01 שרטוט הנדסי ומפרט ייצור למפעל">
-                    <img src="bp-render.jpg" alt="01 שרטוט הנדסי ומפרט ייצור למפעל" loading="lazy" />
-                    <span class="bp-thumb-num">01 שרטוט ייצור</span>
+                  <button type="button" class="bp-thumb-btn active" id="bpThumb-0" onclick="selectBpZone(0)" title="01 שרטוט מבנה הנדסי (שחור-לבן)">
+                    <img src="bp-blueprint-bw.jpg" alt="01 שרטוט מבנה הנדסי (שחור-לבן)" loading="lazy" />
+                    <span class="bp-thumb-num">01 שרטוט מבנה</span>
                   </button>
-                  <button type="button" class="bp-thumb-btn" id="bpThumb-1" onclick="selectBpZone(1)" title="02 פנים התיק וחלוקת התאים">
-                    <img src="bp-interior.jpg" alt="02 פנים התיק וחלוקת התאים" loading="lazy" />
-                    <span class="bp-thumb-num">02 פנים התיק</span>
+                  <button type="button" class="bp-thumb-btn" id="bpThumb-1" onclick="selectBpZone(1)" title="02 שרטוט מפרט צבעוני ליצרן">
+                    <img src="bp-render.jpg" alt="02 שרטוט מפרט צבעוני ליצרן" loading="lazy" />
+                    <span class="bp-thumb-num">02 שרטוט צבעוני</span>
                   </button>
-                  <button type="button" class="bp-thumb-btn" id="bpThumb-2" onclick="selectBpZone(2)" title="03 תא החילוץ וצינורות האוויר (פתוח)">
-                    <img src="bp-towing-open.jpg" alt="03 תא החילוץ וצינורות האוויר (פתוח)" loading="lazy" />
-                    <span class="bp-thumb-num">03 תא חילוץ</span>
+                  <button type="button" class="bp-thumb-btn" id="bpThumb-2" onclick="selectBpZone(2)" title="03 פנים התיק וחלוקת התאים">
+                    <img src="bp-interior.jpg" alt="03 פנים התיק וחלוקת התאים" loading="lazy" />
+                    <span class="bp-thumb-num">03 פנים התיק</span>
                   </button>
-                  <button type="button" class="bp-thumb-btn" id="bpThumb-3" onclick="selectBpZone(3)" title="04 מעטפת חיצונית ומיתוג מענה שלם">
-                    <img src="bp-exterior.jpg" alt="04 מעטפת חיצונית ומיתוג מענה שלם" loading="lazy" />
-                    <span class="bp-thumb-num">04 חוץ התיק</span>
+                  <button type="button" class="bp-thumb-btn" id="bpThumb-3" onclick="selectBpZone(3)" title="04 תא החילוץ וצינורות האוויר (פתוח)">
+                    <img src="bp-towing-open.jpg" alt="04 תא החילוץ וצינורות האוויר (פתוח)" loading="lazy" />
+                    <span class="bp-thumb-num">04 תא חילוץ</span>
                   </button>
-                  <button type="button" class="bp-thumb-btn" id="bpThumb-4" onclick="selectBpZone(4)" title="05 הנדסת אנוש וניסוי נשיאה בסדנה">
-                    <img src="bp-fitting.jpg" alt="05 הנדסת אנוש וניסוי נשיאה בסדנה" loading="lazy" />
-                    <span class="bp-thumb-num">05 נשיאה</span>
+                  <button type="button" class="bp-thumb-btn" id="bpThumb-4" onclick="selectBpZone(4)" title="05 מעטפת חיצונית ומיתוג מענה שלם">
+                    <img src="bp-exterior.jpg" alt="05 מעטפת חיצונית ומיתוג מענה שלם" loading="lazy" />
+                    <span class="bp-thumb-num">05 חוץ התיק</span>
                   </button>
-                  <button type="button" class="bp-thumb-btn" id="bpThumb-5" onclick="selectBpZone(5)" title="06 רשמ״צ מובנה (20 פריטים)">
-                    <img src="bp-bom.jpg" alt="06 רשמ״צ מובנה (20 פריטים)" loading="lazy" />
-                    <span class="bp-thumb-num">06 רשמ"צ</span>
+                  <button type="button" class="bp-thumb-btn" id="bpThumb-5" onclick="selectBpZone(5)" title="06 הנדסת אנוש וניסוי נשיאה בסדנה">
+                    <img src="bp-fitting.jpg" alt="06 הנדסת אנוש וניסוי נשיאה בסדנה" loading="lazy" />
+                    <span class="bp-thumb-num">06 נשיאה</span>
+                  </button>
+                  <button type="button" class="bp-thumb-btn" id="bpThumb-6" onclick="selectBpZone(6)" title="07 רשמ״צ מובנה (20 פריטים)">
+                    <img src="bp-bom.jpg" alt="07 רשמ״צ מובנה (20 פריטים)" loading="lazy" />
+                    <span class="bp-thumb-num">07 רשמ"צ</span>
                   </button>
                 </div>
               </div>
@@ -1618,29 +1622,30 @@
               <div class="cad-details-box">
                 <div>
                   <div class="marker-nav">
-                    <button type="button" class="marker-tab active" id="mTab-0" onclick="selectBpZone(0)">01 שרטוט הנדסי ליצרן (מפרט ייצור)</button>
-                    <button type="button" class="marker-tab" id="mTab-1" onclick="selectBpZone(1)">02 פנים התיק (מכסה סגור)</button>
-                    <button type="button" class="marker-tab" id="mTab-2" onclick="selectBpZone(2)">03 תא חילוץ וצינורות אוויר (פתוח)</button>
-                    <button type="button" class="marker-tab" id="mTab-3" onclick="selectBpZone(3)">04 מעטפת חיצונית ("מענה שלם")</button>
-                    <button type="button" class="marker-tab" id="mTab-4" onclick="selectBpZone(4)">05 הנדסת אנוש וניסוי נשיאה</button>
-                    <button type="button" class="marker-tab" id="mTab-5" onclick="selectBpZone(5)">06 רשמ"צ מובנה (20 פריטים)</button>
+                    <button type="button" class="marker-tab active" id="mTab-0" onclick="selectBpZone(0)">01 שרטוט מבנה הנדסי (שחור-לבן)</button>
+                    <button type="button" class="marker-tab" id="mTab-1" onclick="selectBpZone(1)">02 שרטוט מפרט צבעוני ליצרן</button>
+                    <button type="button" class="marker-tab" id="mTab-2" onclick="selectBpZone(2)">03 פנים התיק (מכסה סגור)</button>
+                    <button type="button" class="marker-tab" id="mTab-3" onclick="selectBpZone(3)">04 תא חילוץ וצינורות אוויר (פתוח)</button>
+                    <button type="button" class="marker-tab" id="mTab-4" onclick="selectBpZone(4)">05 מעטפת חיצונית ("מענה שלם")</button>
+                    <button type="button" class="marker-tab" id="mTab-5" onclick="selectBpZone(5)">06 הנדסת אנוש וניסוי נשיאה</button>
+                    <button type="button" class="marker-tab" id="mTab-6" onclick="selectBpZone(6)">07 רשמ"צ מובנה (20 פריטים)</button>
                   </div>
 
-                  <span id="zCode" style="font-family:var(--font-main); font-size:0.78rem; font-weight:700; color:var(--muted); display:block; margin-block-end:0.3rem;">תצוגה 01 / שרטוט הנדסי ליצרן ומפרט חלוקת תאים</span>
-                  <h3 id="zTitle" style="font-size:1.25rem; margin-block-end:0.7rem;">שרטוט אפיון ותכנון הנדסי ליצרן (מבט חזית, פריסת 180° וחתך תאי ספוג)</h3>
+                  <span id="zCode" style="font-family:var(--font-main); font-size:0.78rem; font-weight:700; color:var(--muted); display:block; margin-block-end:0.3rem;">תצוגה 01 / שרטוט מבנה הנדסי בשחור-לבן (תוכנית חלוקת פנים וחתכים)</span>
+                  <h3 id="zTitle" style="font-size:1.25rem; margin-block-end:0.7rem;">שרטוט מבנה הנדסי בשחור-לבן ליצרן (מבטי חזית, חתך צד ותוכנית חלוקת פנים 180°)</h3>
                   <p id="zDesc" style="font-size:0.91rem; color:var(--muted); margin-block-end:1.2rem;">
-                    שרטוט ההנדסה והמפרט הטכני שהוגדר למפעל טרם הייצור הסדרתי: הגדרת מידות המעטפת (קורדורה 1000D, 6 שורות רצועות עיגון בחזית וכיס צד), חלוקת הדופן העליונה (חלון רשמ"צ שקוף ו-8 כיסי שליפה מתויגים עם אבזמים), ותכנון המגש התחתון המוקשח (ארגז ספוג קשיח עם מכסה צירים לרצועות גרירה וצינורות אוויר, תעלת עיגון ל-2 זוגות שאקלים, ותא מרופד לפטיש כוח, מטען, 2 סוללות ונורות).
+                    שרטוט מבנה הנדסי בשחור-לבן (בקנה מידה 1:5, מידות חוץ 620×440×260 מ"מ) המגדיר למפעל את הקונסטרוקציה, חתכי הדפנות ומחיצות הספוג הקשיח של התיק: מבטי חזית, גב וחתכי צד משמאל, ותוכנית חלוקת פנים מלאה ב-180° מימין (כולל חלון רשמ"צ 01, 8 כיסי שליפה מתויגים 05, תא נורות 03, תא פטיש כוח ושאקלים 04, וארגז ספוג מוקשח לרצועות גרירה וצינורות אוויר 06).
                   </p>
                 </div>
 
                 <dl class="meta-dl">
                   <div class="meta-row">
                     <dt>שלב בפרויקט</dt>
-                    <dd id="zMat">שרטוט ייצור הנדסי, הגדרת מידות וחומרים ותיאום מול המפעל</dd>
+                    <dd id="zMat">שרטוט מבנה וקונסטרוקציה הנדסית בשחור-לבן לייצור במפעל</dd>
                   </div>
                   <div class="meta-row">
                     <dt>אימפקט תפעולי בשטח</dt>
-                    <dd id="zKpi">קיצור זמן שליפת כלי ומניעת אובדן ציוד בשטח</dd>
+                    <dd id="zKpi">הגדרת מידות, מחיצות ספוג וחלוקת עומסים מדויקת לפני ייצור סדרתי</dd>
                   </div>
                 </dl>
               </div>
@@ -1928,16 +1933,24 @@
 
     const zones = [
       {
+        img: 'bp-blueprint-bw.jpg',
+        code: 'תצוגה 01 / שרטוט מבנה הנדסי בשחור-לבן (תוכנית חלוקת פנים וחתכים)',
+        title: 'שרטוט מבנה הנדסי בשחור-לבן ליצרן (מבטי חזית, חתך צד ותוכנית חלוקת פנים 180°)',
+        desc: 'שרטוט מבנה הנדסי בשחור-לבן (בקנה מידה 1:5, מידות חוץ 620×440×260 מ"מ) המגדיר למפעל את הקונסטרוקציה, חתכי הדפנות ומחיצות הספוג הקשיח של התיק: מבטי חזית, גב וחתכי צד משמאל, ותוכנית חלוקת פנים מלאה ב-180° מימין (כולל חלון רשמ"צ 01, 8 כיסי שליפה מתויגים 05, תא נורות 03, תא פטיש כוח ושאקלים 04, וארגז ספוג מוקשח לרצועות גרירה וצינורות אוויר 06).',
+        mat: 'שרטוט מבנה וקונסטרוקציה הנדסית בשחור-לבן לייצור במפעל',
+        kpi: 'הגדרת מידות, מחיצות ספוג וחלוקת עומסים מדויקת לפני ייצור סדרתי'
+      },
+      {
         img: 'bp-render.jpg',
-        code: 'תצוגה 01 / שרטוט הנדסי ליצרן ומפרט חלוקת תאים',
-        title: 'שרטוט אפיון ותכנון הנדסי ליצרן (מבט חזית, פריסת 180° וחתך תאי ספוג)',
-        desc: 'שרטוט ההנדסה והמפרט הטכני שהוגדר למפעל טרם הייצור הסדרתי: הגדרת מידות המעטפת (קורדורה 1000D, 6 שורות רצועות עיגון בחזית וכיס צד), חלוקת הדופן העליונה (חלון רשמ"צ שקוף ו-8 כיסי שליפה מתויגים עם אבזמים), ותכנון המגש התחתון המוקשח (ארגז ספוג קשיח עם מכסה צירים לרצועות גרירה וצינורות אוויר, תעלת עיגון ל-2 זוגות שאקלים, ותא מרופד לפטיש כוח, מטען, 2 סוללות ונורות).',
-        mat: 'שרטוט ייצור הנדסי, הגדרת מידות וחומרים ותיאום מול המפעל',
+        code: 'תצוגה 02 / שרטוט מפרט צבעוני ליצרן וחלוקת תאים',
+        title: 'שרטוט אפיון ומפרט צבעוני ליצרן (מבט חזית, פריסת 180° וחתך תאי ספוג)',
+        desc: 'גיליון המפרט ההנדסי הצבעוני שהוגדר למפעל טרם הייצור הסדרתי: הגדרת מידות המעטפת (קורדורה 1000D, 6 שורות רצועות עיגון בחזית וכיס צד), חלוקת הדופן העליונה (חלון רשמ"צ שקוף ו-8 כיסי שליפה מתויגים עם אבזמים), ותכנון המגש התחתון המוקשח (ארגז ספוג קשיח עם מכסה צירים לרצועות גרירה וצינורות אוויר, תעלת עיגון ל-2 זוגות שאקלים, ותא מרופד לפטיש כוח, מטען, 2 סוללות ונורות).',
+        mat: 'שרטוט ייצור הנדסי צבעוני, הגדרת חומרים ותיאום מול המפעל',
         kpi: 'תאימות מלאה בין אפיון השטח למוצר הסדרתי שיוצר במפעל'
       },
       {
         img: 'bp-interior.jpg',
-        code: 'תצוגה 02 / המוצר הפיזי בפתיחה מלאה (180 מעלות)',
+        code: 'תצוגה 03 / המוצר הפיזי בפתיחה מלאה (180 מעלות)',
         title: 'פנים התיק בפועל: תאי ספוג קשיח וכיסי שליפה מתויגים',
         desc: 'המוצר המוגמר בפתיחה מלאה: בדופן התחתונה תא ספוג קשיח עם מכסה ואבזמים עבור רצועות הגרירה, לצד עיגון לשאקלים, פטיש כוח + מטען ותא נורות. בדופן העליונה כיסים מתויגים (מטען טאבלט, אזיקונים, סרט בידוד, שמן נשקים, מטלית) וחלון רשמ״צ שקוף.',
         mat: 'ייצור סדרתי עם חלוקת תאים וספוגים מותאמים אישית',
@@ -1945,7 +1958,7 @@
       },
       {
         img: 'bp-towing-open.jpg',
-        code: 'תצוגה 03 / תא החילוץ הפנימי ומערך צינורות האוויר (פתוח)',
+        code: 'תצוגה 04 / תא החילוץ הפנימי ומערך צינורות האוויר (פתוח)',
         title: 'פתיחת תא החילוץ הפנימי: רצועות גרירה וסט צינורות אוויר',
         desc: 'פתיחת מכסה הצירים המרופד של הארגז הפנימי חושפת את מערך החילוץ והאוויר המאורגן: רצועות גרירה 3 מ׳ ו-9 מ׳, סט צינורות אוויר ספירליים (אדום וכחול) עם מחברי לחץ מהירים לרכבים ממוגנים, ולצידם סטי השאקלים ופטיש הכוח המעוגנים במקומם.',
         mat: 'ארגז פנימי מוקשח עם מכסה צירים מרופד ספוג',
@@ -1953,7 +1966,7 @@
       },
       {
         img: 'bp-exterior.jpg',
-        code: 'תצוגה 04 / מעטפת חיצונית מוקשחת ורצועות עיגון',
+        code: 'תצוגה 05 / מעטפת חיצונית מוקשחת ורצועות עיגון',
         title: 'מעטפת חיצונית עמידה ("מענה שלם אחזקתי נייד")',
         desc: 'התיק במצב סגור ומוכן להעמסה: בד קורדורה עמיד לשחיקה בתנאי שטח, רצועות עיגון בחזית לציוד משלים, רצועות כיווץ והידוק צדדיות לשמירה על מרכז כובד יציב, ותג הפרויקט הרשמי של מחלקת הטכנולוגיה והאחזקה.',
         mat: 'מעטפת קורדורה חיצונית מוקשחת עם רצועות עיגון ואבזמי הידוק',
@@ -1961,7 +1974,7 @@
       },
       {
         img: 'bp-fitting.jpg',
-        code: 'תצוגה 05 / הנדסת אנוש, התאמת ספוגים וניסוי נשיאה בסדנה',
+        code: 'תצוגה 06 / הנדסת אנוש, התאמת ספוגים וניסוי נשיאה בסדנה',
         title: 'הנדסת אנוש, התאמת ספוגים וניסוי נשיאה על הגב',
         desc: 'תיעוד מתוך שלב הפיתוח וניסויי ההתאמה בסדנה (ניתן לראות על הרצפה את שאריות חיתוך הספוגים המותאמים לכלים): בדיקת איזון המשקל על גב הטכנאי, כוונון רצועות הכתפיים ורצועת המותן התומכת לנשיאת כלי מתכת כבדים בתנועה רגלית.',
         mat: 'ניסויי הנדסת אנוש והתאמת אב-טיפוס בסדנה',
@@ -1969,7 +1982,7 @@
       },
       {
         img: 'bp-bom.jpg',
-        code: 'תצוגה 06 / רשמ"צ מובנה של 20 פריטי ליבה',
+        code: 'תצוגה 07 / רשמ"צ מובנה של 20 פריטי ליבה',
         title: 'רשמ״צ מובנה של 20 פריטי ליבה לבקרת כשירות ותכולה',
         desc: 'חלון ויניל שקוף התפור בחלקו הפנימי של התיק ומכיל את מפרט התכולה התקני (20 פריטים): מפתח רינג ראצ׳ט, בוקסה ארוכה 19, נורות ראשיות, פטיש כוח + מטען + 2 סוללות, רצועות גרירה 3 מ׳ ו-9 מ׳, צינורות אוויר, פטיש, לום, כבלי הנעה, סט סיגנט, שאקלים וציוד מיגון.',
         mat: 'בקרת תצורה ותכולה מובנית בחלון שקוף',
