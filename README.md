@@ -13,6 +13,6 @@
 ---
 
 - **פרופיל לינקדאין:** [linkedin.com/in/yuli-shamir-a19510447](https://www.linkedin.com/in/yuli-shamir-a19510447)
-- **יצירת קשר:** `yulishshsh1@gmail.com` | `052-7251171`
+- **יצירת קשר:** `yulishshsh1@gmail.com`
 
 </div>
